@@ -66,6 +66,24 @@
         }
         .video-container {
             margin: 20px 0;
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            overflow: hidden;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 5px;
+        }
+        .video-container blockquote {
+            width: 100% !important;
+            min-width: 100% !important;
+            max-width: 100% !important;
         }
     </style>
 </head>
@@ -125,7 +143,7 @@
         </div>
         <div class="video-container">
             <h3>WWE Memorial</h3>
-            <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fwwe%2Fvideos%2F1450735649388488%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+            <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fwwe%2Fvideos%2F1450735649388488%2F&show_text=false&width=560&t=0" width="100%" height="auto" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
         </div>
 
         <h2>Legal and Compliance</h2>
